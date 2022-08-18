@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+    background-color: #EEF9BF;
+}
+
+.cabecalho { 
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho h1 {
+    color: #75B79E;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 65.63px;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.conteudo-principal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartas {
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carta {
+    background-color: #A7E9AF;
+    width: 117px;
+    height: 146px;
+
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    margin: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carta img {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+@media (max-width: 614px) {
+
+    .cabecalho h1 {
+        font-size: 50px;
+    }
+  
+    .cartas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
