@@ -5,6 +5,7 @@ let k = 0; // monitora se há até 2 cartas viradas
 let l = 0; // conta as cartas que já formaram pares
 let formaPar = [];
 let elementoAntigo = "";
+let lista = "";
 
 
 iniciarJogo();
@@ -22,7 +23,7 @@ function iniciarJogo () {
 function inserirCartas (quantidade) {
     let array = []; 
 
-    const lista = document.querySelector ('ul');
+    lista = document.querySelector ('ul');
     
     for (i=0; i<quantidade; i++) {
         array.push(i+1);       
@@ -75,9 +76,6 @@ function virarCarta (elementoClicado) {
             elementoClicado.classList.add ('par7');
             formaPar.push('par7');
         }   
-
-        console.log (formaPar); 
-        console.log(k);
         
         elementoClicado.classList.remove ('verso');
 
@@ -115,4 +113,25 @@ function desvirarCarta (elementoClicado) {
 }
 
 
-      
+function finalizarJogo() {
+
+    alert ('Você ganhou em '+ j +' jogadas!');
+  
+    j = 0;
+    i = 0;
+    k = 0;
+    l = 0;
+    array = []; 
+    formaPar = [];
+    lista.innerHTML = ``;
+        
+    let novoJogo = prompt('Deseja jogar novamente? (sim ou não)');
+
+    while (novoJogo !== 'sim' && novoJogo !== 'não') {
+        novoJogo = prompt('Deseja jogar novamente? (sim ou não)');
+    }
+
+    if (novoJogo === 'sim') {
+        iniciarJogo();
+    }
+}        
