@@ -43,19 +43,70 @@ body {
 
     border: 1px solid #99CEA8;
     border-radius: 5px;
-    margin: 15px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 15px;  
 }
 
-.carta img {
-    height: 100px;
-    width: 100px;
+.par1 {
+    background-image: url("Arquivos Úteis - Projeto 04 - Parrot Card Game/metalparrot.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
 }
 
+.par2 {
+    background-image: url("Arquivos Úteis - Projeto 04 - Parrot Card Game/bobrossparrot.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+}
 
+.par3 {
+    background-image: url("Arquivos Úteis - Projeto 04 - Parrot Card Game/explodyparrot.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+}
+
+.par4 {
+    background-image: url("Arquivos Úteis - Projeto 04 - Parrot Card Game/fiestaparrot.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+}
+
+.par5 {
+    background-image: url("Arquivos Úteis - Projeto 04 - Parrot Card Game/unicornparrot.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+}
+
+.par6 {
+    background-image: url("Arquivos Úteis - Projeto 04 - Parrot Card Game/revertitparrot.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+}
+
+.par7 {
+    background-image: url("Arquivos Úteis - Projeto 04 - Parrot Card Game/tripletsparrot.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+}
+
+.verso {
+    background-image: url("Arquivos Úteis - Projeto 04 - Parrot Card Game/parrot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+
+.verso:active {
+    transform: rotateY(180deg);
+    transition: all .1s;
+    transform-style: preserve-3d;
+}
 
 @media (max-width: 614px) {
 
