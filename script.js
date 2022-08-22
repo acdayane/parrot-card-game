@@ -108,7 +108,8 @@ function desvirarCarta (elementoClicado) {
     formaPar=[];
         
     if (l === quantidade) {
-        finalizarJogo();
+        
+        setTimeout (finalizarJogo, 1000);        
     }
 }
 
